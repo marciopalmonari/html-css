@@ -1,1 +1,44 @@
 @charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+body {
+   background: url('../images/fundo-madeira.jpg') no-repeat top center;
+   background-size: cover;
+   background-attachment: fixed;
+   background-size: cover; /* the image will cover the whole container*/
+}
+
+main {
+    position: relative; /* We set this to make the crentralize what we want*/
+    height: 100vh;
+}
+
+section#telephone {
+    position: absolute; /*With this we can locate what we want opn the center setting the top and left*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    height: 627px;
+    width: 311px;
+    background: url('../images/frame-iphone.png') no-repeat;
+}
+
+iframe#screen { /* Here, we make the position of our content (home) insede of our sectioin telephone*/
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
+}
