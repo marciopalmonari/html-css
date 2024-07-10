@@ -16,7 +16,6 @@ body {
    background: url('../images/fundo-madeira.jpg') no-repeat top center;
    background-size: cover;
    background-attachment: fixed;
-   background-size: cover; /* the image will cover the whole container*/
 }
 
 main {
@@ -41,4 +40,23 @@ iframe#screen { /* Here, we make the position of our content (home) insede of ou
     left: 22px;
     width: 269px;
     height: 471px;
+}
+
+section#buttons {
+    text-align: right;
+}
+
+section#buttons > a > img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%; /* 50% means the image will occupate a half of the image */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0.400);
+    box-sizing: border-box; /* the border will be part of the box */
+}
+
+section#buttons img:hover {
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba (0, 0, 0.623);
+    transition: transform .3s, border 1s;
 }

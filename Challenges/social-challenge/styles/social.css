@@ -7,4 +7,5 @@ body {
     width: 100vw;
     height: 100vh;
     background: black url('../images/tela-home.jpg') no-repeat top center;
+    background-size: cover; /* the image will cover the whole container*/
 }
